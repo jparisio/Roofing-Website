@@ -7,8 +7,7 @@ export default function Facts() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true }); // Triggers animation only once
 
-  const words =
-    "The AE.1™ Cosmos Edition delivers the most range and solar capacity of any available roofing material. It’s made for those who want to get the most out of every moment in wild and unforgettable places.";
+  const words = "Services Go here";
   return (
     <motion.div className="facts-container">
       <motion.p className="example-blurb" ref={ref}>
