@@ -7,6 +7,7 @@ import Landing from "./components/Landing";
 import Facts from "./components/Facts";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import ImageGallery from "./components/ImageGallery";
+import Services from "./components/Services";
 
 export default function App() {
   const [renderPage, setrenderPage] = useState(false); // State to manage Facts rendering
@@ -58,6 +59,7 @@ export default function App() {
         <Landing />
         {renderPage && <Facts />}
         {renderPage && <ImageGallery />}
+        {renderPage && <Services />}
       </motion.div>
     </>
   );
