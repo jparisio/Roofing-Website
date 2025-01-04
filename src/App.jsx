@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import Facts from "./components/Facts";
 import PropagateLoader from "react-spinners/PropagateLoader";
+import ImageGallery from "./components/ImageGallery";
 
 export default function App() {
   const [renderPage, setrenderPage] = useState(false); // State to manage Facts rendering
@@ -53,10 +54,10 @@ export default function App() {
           ease: [0.83, 0, 0.17, 1],
         }}
       >
-        {/* <Preloader /> */}
         <Navbar />
         <Landing />
         {renderPage && <Facts />}
+        {renderPage && <ImageGallery />}
       </motion.div>
     </>
   );
