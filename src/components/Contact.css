@@ -51,11 +51,13 @@
 .left-side h1 {
   font-weight: 100;
   font-size: 30px;
+  font-family: sans-serif;
+  color: #a6a6a6;
 }
 
 .divider {
   width: 1px; /* Controls the thickness of the divider */
-  background-color: #f4f4f4; /* Color of the divider */
+  background-color: #a6a6a6; /* Color of the divider */
   height: 80%; /* Full height of the contact card */
 }
 
@@ -74,6 +76,8 @@
   font-weight: 100;
   margin-bottom: 40px;
   font-size: 30px;
+  font-family: sans-serif;
+  color: #a6a6a6;
 }
 
 .fields-container {
@@ -115,6 +119,7 @@
 
 .submit-button:hover {
   background-color: #444;
+  color: #a6a6a6;
 }
 
 .address-field {
