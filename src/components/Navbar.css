@@ -38,7 +38,7 @@
 }
 
 .menu-button-container:hover .menu-button {
-  transform: translateX(-20px); /* Move the button 10px to the left */
+  transform: translateX(-20%); /* Move the button 10px to the left */
 }
 
 .menu-button-container:hover .burger-menu {
@@ -120,4 +120,11 @@
 .configure-button:hover {
   background-color: #333;
   color: white;
+}
+
+@media (max-width: 880px) {
+  /* Hide the burger menu icon on smaller screens */
+  .burger-menu {
+    display: none;
+  }
 }
