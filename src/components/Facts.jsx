@@ -8,7 +8,7 @@ export default function Facts() {
   const isInView = useInView(ref, { once: true }); // Triggers animation only once
 
   const words =
-    "The AE.1™ Cosmos Edition delivers the most range and solar capacity of any available roofing material. It’s made for those who want to get the most out of every moment in wild and unforgettable places.";
+    "Our PrestigeX™ roofing system combines unmatched durability, energy efficiency, and timeless design. Crafted for homeowners who demand excellence and elegance, it transforms every home into a masterpiece of comfort and sophistication.";
   return (
     <motion.div className="facts-container">
       <motion.p className="example-blurb" ref={ref}>

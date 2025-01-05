@@ -1,0 +1,129 @@
+.contact-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #f4f4f4;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card {
+  height: 70vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #333;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+.left-side {
+  width: 50%;
+  height: 100%;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.img-container {
+  position: relative;
+  width: 90%;
+  height: 100%; /* You can adjust the height of the container */
+  overflow: hidden; /* Hide the overflow to create the parallax effect */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-side h1 {
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.divider {
+  width: 1px; /* Controls the thickness of the divider */
+  background-color: #f4f4f4; /* Color of the divider */
+  height: 80%; /* Full height of the contact card */
+}
+
+.right-side {
+  width: 50%;
+  height: 100%;
+  color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-side h2 {
+  font-weight: 100;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.fields-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.input-field {
+  padding: 10px;
+  background-color: #595959;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #f4f4f4;
+  width: 100%;
+  max-width: 200px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #999;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #595959;
+  border: none;
+  border-radius: 5px;
+  color: #f4f4f4;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #444;
+}
+
+.address-field {
+  padding: 10px;
+  background-color: #595959;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #f4f4f4;
+  width: 100%;
+}
+
+.address-field:focus {
+  outline: none;
+  border-color: #999;
+}

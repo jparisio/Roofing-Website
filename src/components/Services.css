@@ -1,0 +1,71 @@
+.services-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #f4f4f4;
+  z-index: 2;
+  box-shadow: 0 -10px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  font-family: sans-serif;
+}
+
+.cards-holder-container {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-container {
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  height: 100%;
+  width: 20%;
+}
+
+.card-container {
+  position: relative;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image-display {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Fixed height for the card's image display */
+  overflow: hidden;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  object-fit: cover; /* Makes the image fill the container while maintaining aspect ratio */
+  object-position: center; /* Centers the image within the container */
+  will-change: transform; /* Optimizes the parallax animation */
+}
+
+.card-text {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 100;
+  font-family: sans-serif;
+}
