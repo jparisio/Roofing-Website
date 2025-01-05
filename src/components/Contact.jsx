@@ -30,7 +30,7 @@ export default function Contact() {
               style={{ y }}
             />
           </div>
-          <h1>Lets Get in Touch</h1>
+          <h1>Let's Get in Touch</h1>
         </div>
         <div className="divider"></div>
         <div className="right-side">

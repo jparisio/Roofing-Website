@@ -5,7 +5,7 @@ import "./Landing.css";
 
 export default function Landing() {
   //blurb stuff
-  const blurb = "Roofing Made Luxury";
+  const blurb = "Redefining Luxury Roofing";
   const content =
     "We pride ourselves on our attention to detail, exceptional customer service, and commitment to using only the best materials for every job. Trust us to protect your home or business with a roof built to last.";
   const company = "COMPANY NAME™";

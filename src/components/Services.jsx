@@ -29,7 +29,7 @@ export default function Services() {
             </h4>
           </div>
           <div class="flex-col small-text">
-            <p>Construction &amp; Renno</p>
+            <p>Construction &amp; Reno</p>
           </div>
         </a>
         <div class="stripe-animate"></div>
