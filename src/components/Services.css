@@ -8,7 +8,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  z-index: 2;
   font-family: sans-serif;
 } /* Base styles */
 
@@ -80,15 +79,6 @@ a {
   color: #333;
   text-align: right;
   justify-content: flex-end; /* Align small text to the right */
-}
-
-/* Adding lines above and below */
-.service-item .stripe-animate:first-child {
-  top: -1px; /* Line at the top */
-}
-
-.service-item .stripe-animate:last-child {
-  bottom: -1px; /* Line at the bottom */
 }
 
 /*changes
