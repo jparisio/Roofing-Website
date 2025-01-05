@@ -130,3 +130,20 @@
   outline: none;
   border-color: #999;
 }
+
+@media (max-width: 880px) {
+  .left-side h1 {
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+  .right-side h2 {
+    font-weight: 100;
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+
+  .contact-card {
+    width: 100vw;
+  }
+}

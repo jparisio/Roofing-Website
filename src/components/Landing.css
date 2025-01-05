@@ -56,3 +56,13 @@
   display: inline-block;
   overflow: hidden;
 }
+
+@media (max-width: 880px) {
+  .blurb {
+    font-size: 40px;
+  }
+
+  .small-info {
+    font-size: 10px;
+  }
+}
