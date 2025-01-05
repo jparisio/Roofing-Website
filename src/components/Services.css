@@ -7,9 +7,91 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   z-index: 2;
   font-family: sans-serif;
+} /* Base styles */
+
+/* Base styles */
+.services-container {
+  padding: 20px;
 }
+
+.service-item {
+  list-style: none;
+  position: relative;
+  margin-bottom: 20px;
+  width: 80%;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.stripe-animate {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px 0;
+  text-decoration: none; /* Ensure no text decoration on links */
+  width: 100%; /* Make the row wider */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+}
+
+.row:hover {
+  transform: translateX(-10px); /* Slightly move the row to the left */
+  opacity: 0.8; /* Fade effect */
+}
+
+a {
+  text-decoration: none; /* Remove underline on links */
+}
+
+.flex-col {
+  display: block;
+  position: relative;
+}
+
+.large-text {
+  order: 1;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  justify-content: flex-start; /* Align large text to the left */
+  text-decoration: none;
+  color: #333;
+}
+
+.large-text span {
+  text-transform: uppercase;
+}
+
+.small-text {
+  order: 2;
+  font-size: 14px;
+  color: #333;
+  text-align: right;
+  justify-content: flex-end; /* Align small text to the right */
+}
+
+/* Adding lines above and below */
+.service-item .stripe-animate:first-child {
+  top: -1px; /* Line at the top */
+}
+
+.service-item .stripe-animate:last-child {
+  bottom: -1px; /* Line at the bottom */
+}
+
+/*changes
 
 .cards-holder-container {
   width: 100%;
@@ -45,7 +127,7 @@
 .image-display {
   position: relative;
   width: 100%;
-  height: 200px; /* Fixed height for the card's image display */
+  height: 200px; 
   overflow: hidden;
   border-radius: 10px;
   object-fit: cover;
@@ -57,9 +139,9 @@
   left: 0;
   width: 110%;
   height: 110%;
-  object-fit: cover; /* Makes the image fill the container while maintaining aspect ratio */
-  object-position: center; /* Centers the image within the container */
-  will-change: transform; /* Optimizes the parallax animation */
+  object-fit: cover; 
+  object-position: center; 
+  will-change: transform; 
 }
 
 .card-text {
@@ -69,3 +151,4 @@
   font-weight: 100;
   font-family: sans-serif;
 }
+*/

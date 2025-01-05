@@ -9,7 +9,7 @@ export default function Contact() {
     target: ref,
     offset: ["start end", "end start"], // Adjusts the parallax effect based on scroll
   });
-  const y = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["-40%", "40%"]);
   return (
     <div className="contact-container" ref={ref}>
       <motion.div

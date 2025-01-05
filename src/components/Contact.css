@@ -38,11 +38,14 @@
   overflow: hidden; /* Hide the overflow to create the parallax effect */
   margin-bottom: 20px;
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.image-container img {
-  width: 100%;
-  height: 100%;
+.img-container img {
+  width: 130%;
+  height: 130%;
 }
 
 .left-side h1 {
