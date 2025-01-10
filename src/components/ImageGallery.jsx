@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, lazy, Suspense } from "react";
 import { useTransform, useScroll, motion } from "framer-motion";
 import "./ImageGallery.css"; // Import the CSS
 
@@ -16,6 +16,9 @@ const images = [
   "img11.jpg",
   "img1.jpg",
 ];
+
+// Lazy load the image component
+const LazyImage = lazy(() => import("./LazyImage"));
 
 export default function ImageGallery() {
   const gallery = useRef(null);
@@ -63,13 +66,14 @@ export default function ImageGallery() {
 const Column = ({ images, y }) => {
   return (
     <motion.div className="column" style={{ y }}>
-      {images.map((src, i) => {
-        return (
-          <div key={i} className="imageContainer">
-            <img src={`/${src}`} alt="image" />
-          </div>
-        );
-      })}
+      {images.map((src, i) => (
+        <Suspense
+          fallback={<div className="placeholder">Loading...</div>}
+          key={i}
+        >
+          <LazyImage src={src} alt={`Image ${i}`} />
+        </Suspense>
+      ))}
     </motion.div>
   );
 };
