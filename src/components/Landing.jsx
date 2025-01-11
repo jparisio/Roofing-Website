@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { initial, animate, transition } from "./anims";
+import muted from "../assets/muted.svg";
+import play from "../assets/play.svg";
 import "./Landing.css";
 
 export default function Landing() {
+  const [isMuted, setMuted] = useState(true);
   //blurb stuff
   const blurb = "Redefining Luxury Roofing";
   const content =
@@ -16,7 +19,10 @@ export default function Landing() {
 
   return (
     <div className="landing-container">
-      <video src="./test.mp4" autoPlay loop></video>
+      <video src="./test.mp4" autoPlay loop muted={isMuted}></video>
+      <div className="sound-button" onClick={() => setMuted(!isMuted)}>
+        {isMuted ? <img src={muted}></img> : <img src={play}></img>}
+      </div>
       <div className="blurb-container">
         <motion.p>
           <span className="letter-wrapper">
