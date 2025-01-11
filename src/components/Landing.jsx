@@ -16,7 +16,7 @@ export default function Landing() {
 
   return (
     <div className="landing-container">
-      <video src="./test.mp4" autoPlay loop muted></video>
+      <video src="./test.mp4" autoPlay loop></video>
       <div className="blurb-container">
         <motion.p>
           <span className="letter-wrapper">
