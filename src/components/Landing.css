@@ -96,3 +96,13 @@
     font-size: 10px;
   }
 }
+
+@media (max-width: 768px) {
+  .blurb {
+    font-size: 30px;
+  }
+
+  .small-info {
+    font-size: 10px;
+  }
+}
