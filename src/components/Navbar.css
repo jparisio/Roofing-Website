@@ -14,7 +14,7 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 95%;
+  width: 95%; /* Consistent centering */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,6 +25,8 @@
   z-index: 1000;
   border-radius: 10px;
   margin-top: 20px;
+  margin-right: auto; /* Remove unnecessary right margin */
+  margin-left: auto; /* Center the bar horizontally */
 }
 
 .menu-button-container {
@@ -122,16 +124,22 @@
   color: white;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 880px) {
-  /* Hide the burger menu icon on smaller screens */
   .burger-menu {
     display: none;
+  }
+  .menu-bar {
+    width: 95%; /* Make the menu-bar slightly smaller on smaller screens */
+    padding: 12px 24px; /* Reduce padding for better fit */
   }
 }
 
 @media (max-width: 768px) {
   .menu-bar {
-    width: 100%;
-    margin-right: 9%;
+    width: 90%; /* Consistent centering */
+    margin-right: auto; /* Remove unnecessary right margin */
+    margin-left: auto; /* Center the bar horizontally */
+    padding: 10px 20px; /* Further reduce padding */
   }
 }
