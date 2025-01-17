@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 /* Main container */
 .website-container {
   width: 100%;
